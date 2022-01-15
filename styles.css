@@ -1,0 +1,45 @@
+body {
+  background-color:rgb(130, 206, 206);
+  font-family: helvetica;
+  color:darkblue;
+}
+
+header {
+  text-align: center;
+}
+
+table {
+  display: block;
+  align-self: center;
+  border: 1px solid darkblue;
+  margin: 50px 0 0 125px;
+  width: 80%;
+}
+
+thead {
+  background-color: rgb(107, 107, 255);
+}
+.selector {
+  text-align: center;
+}
+
+.example {
+  text-align: center;
+  font-family: monospace;
+}
+
+.symbol {
+  text-align: center;
+  font-family: monospace;
+}
+
+.spec {
+  text-align: center;
+}
+
+td {
+  background-color: lightblue;
+  border-bottom: 2px solid blue;
+  /* border-bottom: 1px solid blue; */
+  
+}

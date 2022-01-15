@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors and Specificity</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors and Specificity</h1>
+  </header>
+  <table>
+    <thead>
+      <tr>
+        <th>Selector</th>
+        <th>Symbol</th>
+        <th>Description</th>
+        <th>Examples</th>
+        <th>Specificity</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="selector">Universal Selector</td>
+        <td class="symbol"><em>*</em></td>
+        <td class="desc">selects all elements within the html code.</td>
+        <td class="example">* {}</td>
+        <td class="spec">least</td>
+      </tr>
+      <tr>
+        <td class="selector">Type Selector</td>
+        <td class="symbol"><em>type</em></td>
+        <td class="desc">selects the type of the html element that you would like to style.</td>
+        <td class="example">body {}, h1 {}, header {}</td>
+        <td class="spec">0</td>
+      </tr>
+      <tr>
+        <td class="selector">Descendant Selector</td>
+        <td class="symbol"><em>space</em></td>
+        <td class="desc">selects all the descendant elements of a parent element</td>
+        <td class="example">parent descendant {}</td>
+        <td class="spec">1</td>
+      </tr>
+      <tr>
+        <td class="selector">Parent/Child Selector</td>
+        <td class="symbol"><em>&gt</em></td>
+        <td class="desc">selects the first succeeding child of the parent element</td>
+        <td class="example">parent&gtchild {}</td>
+        <td class="spec">2</td>
+      </tr>
+      <tr>
+        <td class="selector">Pseudo Class Selector</td>
+        <td class="symbol"><em>:keyword</em></td>
+        <td class="desc">keyword added to a selector that specifies a special state of the selected element(s).</td>
+        <td class="example">:focus {}, :visited {}, :hover {}, etc.</td>
+        <td class="spec">3</td>
+      </tr>
+      <tr>
+        <td class="selector">Class Selector</td>
+        <td class="symbol"><em>.</em></td>
+        <td class="desc">selects the value of the class attribute of an element.</td>
+        <td class="example">.className {}</td>
+        <td class="spec">4</td>
+      </tr>
+      <tr>
+        <td class="selector">Attribute Selector</td>
+        <td class="symbol"><em>[attr]</em></td>
+        <td class="desc">matches elements based on the presence or value of a given attribute.</td>
+        <td class="example">element[attrName] {}</td>
+        <td class="spec">5</td>
+      </tr>
+      <tr>
+        <td class="selector">ID Selector</td>
+        <td class="symbol"><em>#</em></td>
+        <td class="desc">selects the value of the ID attribute of an element.</td>
+        <td class="example">#idName {}</td>
+        <td class="spec">6</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
